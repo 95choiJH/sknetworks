@@ -375,14 +375,14 @@
     }
 }
 .board-list.design1.case1.type1 .board-item .board-wrap .board-head .board-subject {
+    color: rgb(21, 21, 26);
     font-weight: 700;
     font-size: 2.4rem;
-    color: rgb(21, 21, 26);
 }
 .board-list.design1.case1.type1 .board-item .board-wrap .board-head .board-date {
+    color: rgb(21, 21, 26);
     font-weight: 500;
     font-size: 1.8rem;
-    color: rgb(21, 21, 26);
 }
 @media (max-width: 1023px) {
     .board-list.design1.case1.type1 .board-item .board-wrap .board-head .board-subject {
@@ -490,9 +490,9 @@
     }
 }
 .board-list.design3.case1.type1 .board-item .board-wrap .board-info .board-name {
+    color: rgb(21, 21, 26);
     font-weight: 700;
     font-size: 2.4rem;
-    color: rgb(21, 21, 26);
 }
 @media (max-width: 1023px) {
     .board-list.design3.case1.type1 .board-item .board-wrap .board-info .board-name {
@@ -618,14 +618,14 @@
     font-size: 1.4rem;
 }
 .board-list.design4.case1.type1 .board-item .board-wrap .board-info .board-name {
+    color: rgb(21, 21, 26);
     font-weight: 700;
     font-size: 2.4rem;
-    color: rgb(21, 21, 26);
     display: -webkit-box;
     overflow: hidden;
     text-overflow: ellipsis;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
 }
 @media (max-width: 1023px) {
     .board-list.design4.case1.type1 .board-item .board-wrap .board-info .board-caption {
@@ -1607,9 +1607,9 @@
     width: 100%;
 }
 .board-list.design14.type1 .board-subject {
+    color: rgb(113, 113, 122);
     font-weight: 700;
     font-size: 1.8rem;
-    color: rgb(113, 113, 122);
 }
 @media (max-width: 1023px) {
     .board-list.design14 {
@@ -1757,10 +1757,10 @@
     }
 }
 .board-list.design16.type1 .para {
-    font-weight: 500;
-    font-size: 1.6rem;
     color: rgb(63, 63, 70);
     text-align: center;
+    font-weight: 500;
+    font-size: 1.6rem;
 }
 @media (max-width: 1023px) {
     .board-list.design16.type1 .para {
@@ -1831,9 +1831,9 @@
     text-align: center;
 }
 .board-list.design17.type1 .board-item .board-name .board-caption {
+    color: rgb(109, 12, 166);
     font-weight: 700;
     font-size: 2.4rem;
-    color: rgb(109, 12, 166);
 }
 @media (max-width: 1023px) {
     .board-list.design17.type1 .board-item .board-name .board-caption {
@@ -1873,9 +1873,9 @@
     text-align: center;
 }
 .board-list.design18 .board-item .board-wrap .board-head .subject {
+    color: rgb(21, 21, 26);
     font-weight: 700;
     font-size: 2.4rem;
-    color: rgb(21, 21, 26);
 }
 .board-list.design18 .board-item .board-wrap .board-head + .board-figure {
     margin: 2.6rem auto 0;
@@ -2094,24 +2094,24 @@
     background: url(../images/sustainability/law.png);
 }
 .board-list.esg-stand .board-item .board-wrap .board-name {
-    font-weight: 700;
-    font-size: 1.8rem;
     color: rgb(151, 53, 208);
     margin-top: 0.8rem;
+    font-weight: 700;
+    font-size: 1.8rem;
 }
 .board-list.esg-stand .board-item .board-wrap .board-body {
     display: flex;
     gap: 1.6rem;
     margin-top: 2.4rem;
 }
+.board-list.esg-stand .board-item .board-wrap .board-body .bullet-display {
+    width: calc(50% - 1.6rem);
+}
 @media (max-width: 1023px) {
     .board-list.esg-stand .board-item .board-wrap .board-body {
         margin: 2.4rem auto 0;
         max-width: 29.1rem;
     }
-}
-.board-list.esg-stand .board-item .board-wrap .board-body .bullet-display {
-    width: calc(50% - 1.6rem);
 }
 @media (max-width: 1023px) {
     .board-list.esg-stand {
@@ -2123,9 +2123,9 @@
         padding: 2.4rem;
     }
     .board-list.esg-stand .board-item .board-wrap .board-name {
+        margin-top: 1.2rem;
         font-weight: 700;
         font-size: 1.4rem;
-        margin-top: 1.2rem;
     }
 }
 .board-list.esg-layout.case1 .borad-item {
@@ -2233,17 +2233,17 @@
     background-image: url(../../assets/images/sustainability/esg-csr-sv-8.svg);
 }
 .board-list.esg-layout.case3 .borad-item .haed {
+    color: rgb(63, 63, 70);
     font-weight: 700;
     font-size: 1.8rem;
-    color: rgb(63, 63, 70);
 }
 .board-list.esg-layout.case3 .borad-item .haed + .body {
     margin-top: 0.8rem;
 }
 .board-list.esg-layout.case3 .borad-item .body {
+    color: rgb(21, 21, 26);
     font-weight: 700;
     font-size: 2.4rem;
-    color: rgb(21, 21, 26);
 }
 .board-list.esg-layout.case3 .borad-item.type1 {
     display: flex;
@@ -2253,9 +2253,9 @@
     background-color: rgb(151, 53, 208);
 }
 .board-list.esg-layout.case3 .borad-item.type1 .body {
+    color: rgb(255, 255, 255);
     font-weight: 700;
     font-size: 3.2rem;
-    color: rgb(255, 255, 255);
 }
 @media (max-width: 1023px) {
     .board-list.esg-layout.case3 {
@@ -2304,15 +2304,15 @@
     }
 }
 .board-list.esg-layout.type1 .board-head .board-subject {
+    color: rgb(21, 21, 26);
     font-weight: 700;
     font-size: 2rem;
-    color: rgb(21, 21, 26);
 }
 .board-list.esg-layout.type1 .board-head .caption {
-    font-weight: 500;
-    font-size: 1.6rem;
     color: rgb(63, 63, 70);
     text-align: right;
+    font-weight: 500;
+    font-size: 1.6rem;
 }
 @media (max-width: 1023px) {
     .board-list.esg-layout.type1 .board-head .board-subject {
@@ -2463,9 +2463,9 @@
     background: url(../images/sustainability/day6.jpg);
 }
 .board-list.esg-happy-day .board-item .board-wrap .board-name {
+    margin-top: 1.6rem;
     font-weight: 700;
     font-size: 1.6rem;
-    margin-top: 1.6rem;
 }
 @media (max-width: 1023px) {
     .board-list.esg-happy-day {
@@ -12833,7 +12833,6 @@ sub {
 }
 #wrap .section.design2 .section-wrap {
     display: flex;
-    align-items: flex-start;
 }
 @media (max-width: 1023px) {
     #wrap .section.design2 .section-wrap {
@@ -15800,280 +15799,304 @@ sub {
 .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(1) {
     top: 0;
     left: 10.417vw;
+    width: 35vw;
 }
 @media (max-width: 1023px) {
     .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(1) {
         top: 0;
         left: 0;
+        width: 66.667vw;
     }
 }
-.company.introduction .section.story2 .section-body .post-list .post-item:nth-child(1) .post-figure {
-    width: 35vw;
+.company.introduction .section.story2 .section-body .post-list .post-item:nth-child(1) .post-wrap .post-figure {
+    width: 100%;
     height: 24.063vw;
 }
 @media (max-width: 1023px) {
-    .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(1) .post-figure {
-        width: 66.667vw;
+    .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(1) .post-wrap .post-figure {
         height: 45.867vw;
+    }
+}
+@media (max-width: 1023px) {
+    .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(1) .post-wrap .post-date {
+        text-align: left;
     }
 }
 .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(2) {
     top: 18.125vw;
     right: 10.417vw;
+    width: 23.021vw;
 }
 @media (max-width: 1023px) {
     .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(2) {
         top: 66.4vw;
         right: 0;
+        width: 58.933vw;
     }
 }
-.company.introduction .section.story2 .section-body .post-list .post-item:nth-child(2) .post-figure {
-    width: 23.021vw;
+.company.introduction .section.story2 .section-body .post-list .post-item:nth-child(2) .post-wrap .post-figure {
+    width: 100%;
     height: 24.063vw;
 }
 @media (max-width: 1023px) {
-    .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(2) .post-figure {
-        width: 58.933vw;
+    .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(2) .post-wrap .post-figure {
         height: 61.6vw;
     }
 }
 .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(3) {
     top: 34.323vw;
     left: 23.021vw;
+    width: 30.521vw;
 }
 @media (max-width: 1023px) {
     .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(3) {
         top: 148.533vw;
         left: 0;
+        width: 78.133vw;
     }
 }
-.company.introduction .section.story2 .section-body .post-list .post-item:nth-child(3) .post-figure {
-    width: 30.521vw;
+.company.introduction .section.story2 .section-body .post-list .post-item:nth-child(3) .post-wrap .post-figure {
+    width: 100%;
     height: 17.604vw;
 }
 @media (max-width: 1023px) {
-    .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(3) .post-figure {
-        width: 78.133vw;
+    .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(3) .post-wrap .post-figure {
         height: 45.067vw;
     }
 }
 .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(4) {
     top: 53.177vw;
     right: 18.75vw;
+    width: 18.385vw;
 }
 @media (max-width: 1023px) {
     .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(4) {
         top: 224.8vw;
         right: 0;
+        width: 42.933vw;
     }
 }
-.company.introduction .section.story2 .section-body .post-list .post-item:nth-child(4) .post-figure {
-    width: 18.385vw;
+.company.introduction .section.story2 .section-body .post-list .post-item:nth-child(4) .post-wrap .post-figure {
+    width: 100%;
     height: 19.479vw;
 }
 @media (max-width: 1023px) {
-    .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(4) .post-figure {
-        width: 42.933vw;
+    .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(4) .post-wrap .post-figure {
         height: 45.6vw;
     }
 }
 .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(5) {
     top: 62.917vw;
     left: 8.646vw;
+    width: 23.021vw;
 }
 @media (max-width: 1023px) {
     .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(5) {
         top: 255.467vw;
         left: 0;
+        width: 43.2vw;
     }
 }
-.company.introduction .section.story2 .section-body .post-list .post-item:nth-child(5) .post-figure {
-    width: 23.021vw;
+.company.introduction .section.story2 .section-body .post-list .post-item:nth-child(5) .post-wrap .post-figure {
+    width: 100%;
     height: 13.333vw;
 }
 @media (max-width: 1023px) {
-    .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(5) .post-figure {
-        width: 43.2vw;
+    .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(5) .post-wrap .post-figure {
         height: 24.8vw;
+    }
+}
+@media (max-width: 1023px) {
+    .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(5) .post-wrap .post-date {
+        text-align: left;
     }
 }
 .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(6) {
     top: 88.125vw;
     left: 17.708vw;
+    width: 16.667vw;
 }
 @media (max-width: 1023px) {
     .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(6) {
         top: 321.6vw;
         left: 0;
+        width: 27.2vw;
     }
 }
-.company.introduction .section.story2 .section-body .post-list .post-item:nth-child(6) .post-figure {
-    width: 16.667vw;
+.company.introduction .section.story2 .section-body .post-list .post-item:nth-child(6) .post-wrap .post-figure {
+    width: 100%;
     height: 22.188vw;
 }
 @media (max-width: 1023px) {
-    .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(6) .post-figure {
-        width: 27.2vw;
+    .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(6) .post-wrap .post-figure {
         height: 36.267vw;
     }
 }
 .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(7) {
     top: 94.323vw;
     left: 41.667vw;
+    width: 16.667vw;
 }
 @media (max-width: 1023px) {
     .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(7) {
         top: 334.933vw;
         left: 32vw;
+        width: 27.2vw;
     }
 }
-.company.introduction .section.story2 .section-body .post-list .post-item:nth-child(7) .post-figure {
-    width: 16.667vw;
+.company.introduction .section.story2 .section-body .post-list .post-item:nth-child(7) .post-wrap .post-figure {
+    width: 100%;
     height: 22.188vw;
 }
 @media (max-width: 1023px) {
-    .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(7) .post-figure {
-        width: 27.2vw;
+    .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(7) .post-wrap .post-figure {
         height: 36.267vw;
     }
 }
 .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(8) {
     top: 100.99vw;
     right: 17.708vw;
+    width: 16.667vw;
 }
 @media (max-width: 1023px) {
     .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(8) {
         top: 348.267vw;
         right: 0;
+        width: 27.2vw;
     }
 }
-.company.introduction .section.story2 .section-body .post-list .post-item:nth-child(8) .post-figure {
-    width: 16.667vw;
+.company.introduction .section.story2 .section-body .post-list .post-item:nth-child(8) .post-wrap .post-figure {
+    width: 100%;
     height: 22.188vw;
 }
 @media (max-width: 1023px) {
-    .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(8) .post-figure {
-        width: 27.2vw;
+    .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(8) .post-wrap .post-figure {
         height: 36.267vw;
     }
 }
 .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(9) {
     top: 130.365vw;
     left: 8.646vw;
+    width: 35vw;
 }
 @media (max-width: 1023px) {
     .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(9) {
         top: 410.133vw;
         left: 0;
+        width: 90.4vw;
     }
 }
-.company.introduction .section.story2 .section-body .post-list .post-item:nth-child(9) .post-figure {
-    width: 35vw;
+.company.introduction .section.story2 .section-body .post-list .post-item:nth-child(9) .post-wrap .post-figure {
+    width: 100%;
     height: 33.542vw;
 }
 @media (max-width: 1023px) {
-    .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(9) .post-figure {
-        width: 90.4vw;
+    .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(9) .post-wrap .post-figure {
         height: 86.667vw;
     }
 }
 .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(10) {
     top: 141.094vw;
     right: 13.438vw;
+    width: 11.823vw;
 }
 @media (max-width: 1023px) {
     .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(10) {
         top: 525.067vw;
         right: 56vw;
+        width: 30.267vw;
     }
 }
-.company.introduction .section.story2 .section-body .post-list .post-item:nth-child(10) .post-figure {
-    width: 11.823vw;
+.company.introduction .section.story2 .section-body .post-list .post-item:nth-child(10) .post-wrap .post-figure {
+    width: 100%;
     height: 14.375vw;
 }
 @media (max-width: 1023px) {
-    .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(10) .post-figure {
-        width: 30.267vw;
+    .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(10) .post-wrap .post-figure {
         height: 36.8vw;
     }
 }
 .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(11) {
     top: 163.906vw;
     right: 23.698vw;
+    width: 24.115vw;
 }
 @media (max-width: 1023px) {
     .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(11) {
         top: 583.733vw;
         right: 3.733vw;
+        width: 61.6vw;
     }
 }
-.company.introduction .section.story2 .section-body .post-list .post-item:nth-child(11) .post-figure {
-    width: 24.115vw;
+.company.introduction .section.story2 .section-body .post-list .post-item:nth-child(11) .post-wrap .post-figure {
+    width: 100%;
     height: 17.708vw;
 }
 @media (max-width: 1023px) {
-    .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(11) .post-figure {
-        width: 61.6vw;
+    .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(11) .post-wrap .post-figure {
         height: 45.333vw;
     }
 }
 .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(12) {
     top: 185.729vw;
     left: 17.708vw;
+    width: 18.49vw;
 }
 @media (max-width: 1023px) {
     .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(12) {
         top: 650.933vw;
         left: 0;
+        width: 47.333vw;
     }
 }
-.company.introduction .section.story2 .section-body .post-list .post-item:nth-child(12) .post-figure {
-    width: 18.49vw;
+.company.introduction .section.story2 .section-body .post-list .post-item:nth-child(12) .post-wrap .post-figure {
+    width: 100%;
     height: 18.177vw;
 }
 @media (max-width: 1023px) {
-    .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(12) .post-figure {
-        width: 47.333vw;
+    .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(12) .post-wrap .post-figure {
         height: 46.533vw;
     }
 }
 .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(13) {
     top: 209.219vw;
     right: 13.646vw;
+    width: 24.896vw;
 }
 @media (max-width: 1023px) {
     .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(13) {
         top: 722.133vw;
         right: 0;
+        width: 63.733vw;
     }
 }
-.company.introduction .section.story2 .section-body .post-list .post-item:nth-child(13) .post-figure {
-    width: 24.896vw;
+.company.introduction .section.story2 .section-body .post-list .post-item:nth-child(13) .post-wrap .post-figure {
+    width: 100%;
     height: 18.906vw;
 }
 @media (max-width: 1023px) {
-    .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(13) .post-figure {
-        width: 63.733vw;
+    .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(13) .post-wrap .post-figure {
         height: 48.267vw;
     }
 }
 .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(14) {
     top: 226.146vw;
     left: 22.135vw;
+    width: 24.219vw;
 }
 @media (max-width: 1023px) {
     .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(14) {
         top: 795.2vw;
         left: 5.867vw;
+        width: 61.867vw;
     }
 }
-.company.introduction .section.story2 .section-body .post-list .post-item:nth-child(14) .post-figure {
-    width: 24.219vw;
+.company.introduction .section.story2 .section-body .post-list .post-item:nth-child(14) .post-wrap .post-figure {
+    width: 100%;
     height: 21.771vw;
 }
 @media (max-width: 1023px) {
-    .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(14) .post-figure {
-        width: 61.867vw;
+    .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(14) .post-wrap .post-figure {
         height: 55.733vw;
     }
 }
@@ -16854,13 +16877,19 @@ sub {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    text-align: left;
     z-index: 1;
 }
+.en .company.introduction .section.story7 .section-body .data-list .data-item .data-wrap {
+    padding: 6rem 4rem 6rem 4rem;
+}
+
 @media (max-width: 1023px) {
     .company.introduction .section.story7 .section-body .data-list .data-item .data-wrap {
         padding: 2.4rem 1rem 2.4rem 1rem;
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
 }
 .company.introduction .section.story7 .section-body .data-list .data-item .data-wrap .data-head .data-subject .data-name {
@@ -19132,6 +19161,9 @@ sub {
         background: url("https://place-hold.it/1200X600") no-repeat center/140%;
     }
 }
+#wrap .business.speedmate .content-body .section.banner-section .banner-head img {
+    width: 10.9rem;
+}
 @media (min-width: 1024px) {
     #wrap .business.globalTrading .content-body .section .article.intro .article-wrap .article-body::before {
         background: url("../../assets/images/business/bg-intro-section-globalTrading-pc.jpg") no-repeat center/140%;
@@ -19276,24 +19308,22 @@ sub {
 .ir.stock-info.audit-report .section .section-wrap {
     gap: 2rem;
 }
-@media (max-width: 1023px) {
-    .ir.stock-info.audit-report .section .section-wrap {
-        gap: 2.4rem;
-    }
-}
 .ir.stock-info.audit-report .section .section-head {
     width: 32.25%;
 }
 .ir.stock-info.audit-report .section .section-head .section-name {
+    color: rgb(255, 255, 255);
     font-weight: 700;
     font-size: 2rem;
-    color: rgb(255, 255, 255);
 }
 .ir.stock-info.audit-report .section .section-body {
     width: 67.75%;
 }
 .ir.stock-info.audit-report .section .section-body .board-list .board-item {
     width: 38.6rem;
+}
+.ir.stock-info.audit-report .section.current .section-wrap {
+    align-items: center;
 }
 .ir.stock-info.audit-report .section ~ .section {
     margin-top: 16rem;
@@ -19307,6 +19337,12 @@ sub {
     }
     .ir.stock-info.audit-report .section .section-body .board-list .board-item {
         width: 100%;
+    }
+    .ir.stock-info.audit-report .section.current .section-wrap {
+        gap: 1.6rem;
+    }
+    .ir.stock-info.audit-report .section.report .section-wrap {
+        gap: 2.4rem;
     }
     .ir.stock-info.audit-report .section ~ .section {
         margin-top: 8rem;
@@ -22132,9 +22168,6 @@ sub {
         min-width: 1298px;
     }
 }
-.esg:not(.overview).governance-structure .tab-display + .panel-display {
-    margin-top: 6.4rem;
-}
 .esg:not(.overview).governance-structure .section.structure .data-display.design1.case2 > .data-list > .data-item + .data-item {
     margin-top: 6.4rem;
 }
@@ -22229,7 +22262,7 @@ sub {
     }
 }
 .esg:not(.overview).governance-structure .section.download1 .board-list .board-item {
-    width: calc(33.3333333333% - 1.333rem);
+    width: calc(50% - 1rem);
 }
 .esg:not(.overview).governance-structure .section.download1 .board-list .board-item .board-head {
     min-height: 8.3rem;
@@ -22260,9 +22293,6 @@ sub {
     }
 }
 @media (max-width: 1023px) {
-    .esg:not(.overview).governance-structure .tab-display + .panel-display {
-        margin-top: 3.2rem;
-    }
     .esg:not(.overview).governance-structure .esg-committee-table {
         min-width: 1337px;
     }

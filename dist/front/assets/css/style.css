@@ -3644,18 +3644,18 @@
     vertical-align: middle;
 }
 .form.checkbox.design1 .checkbox-list .checkbox-item input[type=checkbox] {
-    background: url("data:image/svg+xml,%0A%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 1.8H4C2.78497 1.8 1.8 2.78497 1.8 4V12C1.8 13.215 2.78497 14.2 4 14.2H12C13.215 14.2 14.2 13.215 14.2 12V4C14.2 2.78497 13.215 1.8 12 1.8ZM4 0C1.79086 0 0 1.79086 0 4V12C0 14.2091 1.79086 16 4 16H12C14.2091 16 16 14.2091 16 12V4C16 1.79086 14.2091 0 12 0H4Z' fill='rgb(0,0,0)'/%3E%3C/svg%3E%0A") no-repeat center/100%;
+    background: url("data:image/svg+xml,%0A%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 1.8H4C2.78497 1.8 1.8 2.78497 1.8 4V12C1.8 13.215 2.78497 14.2 4 14.2H12C13.215 14.2 14.2 13.215 14.2 12V4C14.2 2.78497 13.215 1.8 12 1.8ZM4 0C1.79086 0 0 1.79086 0 4V12C0 14.2091 1.79086 16 4 16H12C14.2091 16 16 14.2091 16 12V4C16 1.79086 14.2091 0 12 0H4Z' fill='rgb(0,0,0)'/%3E%3C/svg%3E%0A") no-repeat center/1.6rem 1.6rem;
 }
 .form.checkbox.design1 .checkbox-list .checkbox-item input[type=checkbox]:checked {
-    background: url("data:image/svg+xml,%0A%3Csvg width='16' height='12' viewBox='0 0 16 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.638 0.365166C15.9894 0.716638 15.9894 1.28649 15.638 1.63796L5.99151 11.2844C5.44478 11.8311 4.55835 11.8311 4.01161 11.2844L0.365166 7.63796C0.0136946 7.28649 0.0136945 6.71664 0.365166 6.36517C0.716638 6.01369 1.28649 6.01369 1.63796 6.36517L5.00156 9.72877L14.3652 0.365166C14.7166 0.0136945 15.2865 0.0136945 15.638 0.365166Z' fill='rgb(151,53,208)'/%3E%3C/svg%3E%0A") no-repeat center/100%;
+    background: url("data:image/svg+xml,%0A%3Csvg width='16' height='12' viewBox='0 0 16 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.638 0.365166C15.9894 0.716638 15.9894 1.28649 15.638 1.63796L5.99151 11.2844C5.44478 11.8311 4.55835 11.8311 4.01161 11.2844L0.365166 7.63796C0.0136946 7.28649 0.0136945 6.71664 0.365166 6.36517C0.716638 6.01369 1.28649 6.01369 1.63796 6.36517L5.00156 9.72877L14.3652 0.365166C14.7166 0.0136945 15.2865 0.0136945 15.638 0.365166Z' fill='rgb(151,53,208)'/%3E%3C/svg%3E%0A") no-repeat center/1.6rem 1.2rem;
 }
 .form.checkbox.design1 .checkbox-list .checkbox-item input[type=checkbox]:checked + .option {
     color: rgb(151, 53, 208);
 }
 .form.checkbox.case1 .checkbox-item input[type=checkbox] {
-    width: 1.6rem;
-    height: 1.6rem;
-    margin-right: 1.2rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 0.8rem;
 }
 .form.checkbox.case1 .checkbox-item + .checkbox-item {
     padding-left: 1.6rem;
@@ -6237,7 +6237,11 @@
     box-shadow: 0 0.1336rem 0.5342rem 0 rgba(0, 0, 0, 0.1);
     border-radius: 1.6rem;
 }
+.data-display.investment .data-list .data-item .data-head {
+    display: block;
+}
 .data-display.investment .data-list .data-item .data-head .data-name {
+    display: inline-block;
     color: rgb(21, 21, 26);
 }
 @media (min-width: 1024px) {
@@ -6253,6 +6257,7 @@
     }
 }
 .data-display.investment .data-list .data-item .data-body {
+    display: block;
     color: rgb(63, 63, 70);
 }
 .data-display.investment .data-list .data-item .data-body .accent {
@@ -10240,6 +10245,8 @@ body.modal-open {
     .modal-display {
         flex-direction: column;
         flex-wrap: nowrap;
+        gap: 1.6rem;
+        padding: 8.2rem 1.8rem 1.8rem 1.8rem;
     }
 }
 .modal-display .modal.notice {
@@ -10285,7 +10292,7 @@ body.modal-open {
     overflow-y: auto;
 }
 .modal-display .modal.notice .modal-inner .modal-area .modal-wrap .modal-body {
-    padding: 6.4rem 4rem 0;
+    padding: 6.4rem 4rem 4rem;
 }
 .modal-display .modal.notice .modal-inner .modal-area .modal-wrap .modal-body .section-head .section-subject .section-name {
     display: block;
@@ -10309,8 +10316,24 @@ body.modal-open {
 .modal-display .modal.notice .modal-inner .modal-area .modal-wrap .modal-body .section-body + .section-util {
     margin-top: 4rem;
 }
-.modal-display .modal.notice .modal-inner .modal-area .modal-wrap .modal-body + .modal-footer {
-    margin-top: 4rem;
+@media (max-width: 1023px) {
+    .modal-display .modal.notice .modal-inner .modal-area .modal-wrap .modal-body {
+        padding: 3.2rem 2.4rem 2.4rem;
+    }
+    .modal-display .modal.notice .modal-inner .modal-area .modal-wrap .modal-body .section-head .section-subject .section-name {
+        font-weight: 700;
+        font-size: 2rem;
+    }
+    .modal-display .modal.notice .modal-inner .modal-area .modal-wrap .modal-body .section-head + .section-body {
+        margin-top: 1.6rem;
+    }
+    .modal-display .modal.notice .modal-inner .modal-area .modal-wrap .modal-body .section-body .para {
+        font-weight: 500;
+        font-size: 1.4rem;
+    }
+    .modal-display .modal.notice .modal-inner .modal-area .modal-wrap .modal-body .section-body + .section-util {
+        margin-top: 2.4rem;
+    }
 }
 .modal-display .modal.notice .modal-inner .modal-area .modal-wrap .modal-footer {
     display: flex;
@@ -10318,6 +10341,11 @@ body.modal-open {
     justify-content: space-between;
     padding: 0.8rem 2.4rem;
     background-color: rgb(246, 246, 247);
+}
+@media (max-width: 1023px) {
+    .modal-display .modal.notice .modal-inner .modal-area .modal-wrap .modal-footer {
+        padding: 0.8rem 1.6rem;
+    }
 }
 
 body {
@@ -19837,6 +19865,11 @@ sub {
 }
 @media (max-width: 1023px) {
     .ir.stock-info.price-info .content-body .section.shareholder-status iframe {
+        width: 100%;
+    }
+}
+@media (max-width: 1023px) {
+    .ir.stock-info.price-info .content-body .section.shareholder-status iframe {
         height: 201.8rem;
     }
     .en .ir.stock-info.price-info .content-body .section.shareholder-status iframe {
@@ -20117,6 +20150,11 @@ sub {
     .ir.stock-info.ir-dart .section .section-body iframe {
         width: calc(100% + 1.7rem);
         margin-left: -0.85rem;
+    }
+}
+@media (max-width: 1023px) {
+    .ir.stock-info.ir-dart .section .section-body iframe {
+        width: 100%;
     }
 }
 @media (max-width: 1023px) {

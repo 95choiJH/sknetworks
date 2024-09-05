@@ -70,15 +70,15 @@
                                 if (accordionItem.classList.contains("active")) {
                                     accordionItem.classList.remove("active");
                                     bodyPanel.style.height = 0;
-                                    setTimeout(() => {
-                                        bodyPanel.style.overflow = "hidden";
-                                    }, 100);
+                                    // setTimeout(() => {
+                                    //     bodyPanel.style.overflow = "hidden";
+                                    // }, 100);
                                 } else {
                                     accordionItem.classList.add("active");
                                     bodyPanel.style.height = bodyPanel.scrollHeight + "px";
-                                    setTimeout(() => {
-                                        bodyPanel.style.overflow = "visible";
-                                    }, 100);
+                                    // setTimeout(() => {
+                                    //     bodyPanel.style.overflow = "visible";
+                                    // }, 100);
                                 }
                             }
                         }
@@ -6069,8 +6069,8 @@
                                         <div class="accordion-util">
                                             <div class="submit-form">
                                                 <div class="form select design1 case1 type1">
-                                                    <label for="ver-1-3-select" class="blind">개인정보처리방침 변경일자 이전 버전 보기</label>
-                                                    <select name="ver-select" id="ver-1-3-select">
+                                                    <label for="ver-1-0-select" class="blind">개인정보처리방침 변경일자 이전 버전 보기</label>
+                                                    <select name="ver-select" id="ver-1-0-select">
                                                         <option value="" disabled selected>지난 개인정보처리방침 확인하기</option>
                                                         <option value="ver-info-1-0">개인정보처리방침 변경일자 : 2009. 06. 08 (이전 v1.0버전 보기)</option>
                                                         <option value="ver-info-1-1">개인정보처리방침 변경일자 : 2015. 12. 22 (이전 v1.1버전 보기)</option>

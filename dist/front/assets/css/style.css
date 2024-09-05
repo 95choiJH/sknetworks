@@ -13840,15 +13840,7 @@ sub {
     position: relative;
     overflow: hidden;
 }
-.sk-main .section.intro .section-content {
-    height: 100vh;
-}
-.sk-main .section.intro .section-content.our-business {
-    position: relative;
-    z-index: 1;
-    transition: transform 1s ease;
-}
-.sk-main .section.intro .section-content.our-business .content-background {
+.sk-main .section.intro .intro-video {
     position: absolute;
     top: 7.2rem;
     left: 0;
@@ -13856,15 +13848,20 @@ sub {
     height: 100%;
     background: linear-gradient(180deg, rgba(5, 5, 5, 0) 78.89%, #050505 89.07%);
     opacity: 0;
-    transform: scale(1.5);
+    transform: scale(1.2);
     transition: 1.8s cubic-bezier(0.5, 0, 0, 1);
-    transform-origin: bottom;
+    transform-origin: center;
 }
-.sk-main .section.intro .section-content.our-business .content-background > video {
+.sk-main .section.intro .intro-video > video {
     width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+}
+.sk-main .section.intro .section-content {
+    height: 100vh;
+}
+.sk-main .section.intro .section-content.our-business {
+    position: relative;
+    z-index: 2;
+    transition: transform 1s ease;
 }
 .sk-main .section.intro .section-content.our-business .content-inner {
     position: absolute;
@@ -13906,7 +13903,7 @@ sub {
         transition: opacity 1.8s cubic-bezier(0.5, 0, 0, 1);
     }
     .en .sk-main .section.intro .section-content.our-business .content-inner .section-head .section-name::after {
-        right: -3.6rem;
+        right: 19.7rem;
     }
 }
 @media (max-width: 1023px) {
@@ -14228,7 +14225,7 @@ sub {
         transform: translate(-50%, -53.1%) scale(3.6);
     }
 }
-.sk-main .section.intro.active2 .section-content.our-business .content-background {
+.sk-main .section.intro.active2 .intro-video {
     transform: scale(1);
     opacity: 1;
 }
@@ -14265,7 +14262,7 @@ sub {
         transform: translate(-50%, -53.8%) scale(2.05);
     }
 }
-.sk-main .section.intro.active3 .section-content.our-business .content-background {
+.sk-main .section.intro.active3 .intro-video {
     transform: scale(1.5);
     opacity: 0;
 }
@@ -16092,13 +16089,13 @@ sub {
 }
 .company.introduction .section.story2 .section-body .post-list .post-item .post-date {
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 2.4rem;
     text-align: right;
 }
 @media (max-width: 1023px) {
     .company.introduction .section.story2 .section-body .post-list .post-item .post-date {
         font-weight: 500;
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
 }
 .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(1) {
@@ -16120,11 +16117,6 @@ sub {
 @media (max-width: 1023px) {
     .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(1) .post-wrap .post-figure {
         height: 45.867vw;
-    }
-}
-@media (max-width: 1023px) {
-    .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(1) .post-wrap .post-date {
-        text-align: left;
     }
 }
 .company.introduction .section.story2 .section-body .post-list .post-item:nth-child(2) {
@@ -17914,7 +17906,7 @@ sub {
 .company.history .section.anchor-area .anchor-display {
     overflow: visible;
 }
-@media (max-width: 1023px) {
+@media (max-width: 1199px) {
     .company.history .section.anchor-area .anchor-display {
         padding-right: 3.6rem;
     }
@@ -17926,7 +17918,7 @@ sub {
     -moz-column-gap: 2rem;
          column-gap: 2rem;
 }
-@media (max-width: 1023px) {
+@media (max-width: 1199px) {
     .company.history .section.anchor-area .anchor-display .anchor-list {
         -moz-column-gap: 1.2rem;
              column-gap: 1.2rem;
@@ -17935,7 +17927,7 @@ sub {
 .company.history .section.anchor-area .anchor-display .anchor-list .anchor-item {
     width: calc(25% - 1.5rem);
 }
-@media (max-width: 1023px) {
+@media (max-width: 1199px) {
     .company.history .section.anchor-area .anchor-display .anchor-list .anchor-item {
         width: calc(25% - 0.9rem);
         min-width: 10.5rem;
@@ -17952,7 +17944,7 @@ sub {
             backdrop-filter: blur(30px);
     transition: 0.5s ease;
 }
-@media (max-width: 1023px) {
+@media (max-width: 1199px) {
     .company.history .section.anchor-area .anchor-display .anchor-list .anchor-link {
         padding: 1rem 0.4rem;
     }
@@ -17977,7 +17969,7 @@ sub {
         font-size: 1.8rem !important;
     }
 }
-@media (max-width: 1023px) {
+@media (max-width: 1199px) {
     .company.history .section.anchor-area .anchor-display .anchor-list .anchor-link .link-text.title {
         display: none;
     }
@@ -18001,7 +17993,7 @@ sub {
     font-weight: 700;
     font-size: 2rem;
 }
-@media (max-width: 1023px) {
+@media (max-width: 1199px) {
     .company.history .section.anchor-area .anchor-display .anchor-list .anchor-link.active .link-text.title {
         display: none;
     }
@@ -18017,7 +18009,7 @@ sub {
 .company.history .section.anchor-area.fixed.anchor-dropping {
     transform: translateX(-50%) translateY(7.2rem);
 }
-@media (max-width: 1023px) {
+@media (max-width: 1199px) {
     .company.history .section.anchor-area.fixed.anchor-dropping {
         transform: translateX(-50%) translateY(6.2rem);
     }
@@ -18968,6 +18960,9 @@ sub {
 #wrap .business .content-body .section.business-profile .data-display .data-list .data-item.trading {
     background-image: url("../../assets/images/business/profile6-figure.jpg");
 }
+#wrap .business .content-body .section.business-profile .data-display .data-list .data-item.ai {
+    background-image: url("../../assets/images/business/profile7-figure.jpg");
+}
 @media (max-width: 1023px) {
     #wrap .business .content-body .section.business-profile .data-display .data-list .data-item {
         width: calc((100% - 1.6rem) / 2);
@@ -19182,6 +19177,13 @@ sub {
     background: url("../../assets/images/business/bg-trading-pc.jpg") no-repeat center/cover;
     clip-path: inset(0% 0% 0% 0% round 1.6rem);
 }
+#wrap .business.overview .section.ai .section-head::after {
+    background: url("../../assets/images/business/bg-ai-pc.jpg") no-repeat center/cover;
+    clip-path: inset(0% 0% 0% 0% round 1.6rem);
+}
+#wrap .business.overview .section.ai .section-body .board-list .board-item .board-wrap .board-body .board-list-sub .board-item-sub {
+    width: 100%;
+}
 @media (max-width: 1023px) {
     #wrap .business.overview .section .section-head {
         padding-bottom: 21.2rem;
@@ -19270,6 +19272,10 @@ sub {
         background: url("../../assets/images/business/bg-trading-mo.jpg") no-repeat center/cover;
         clip-path: inset(0% 0% 0% 0% round 0.8rem);
     }
+    #wrap .business.overview .section.ai .section-head::after {
+        background: url("../../assets/images/business/bg-ai-mo.jpg") no-repeat center/cover;
+        clip-path: inset(0% 0% 0% 0% round 0.8rem);
+    }
 }
 #wrap .business.globalInvestment .content-body {
     background-color: rgb(246, 246, 247);
@@ -19336,6 +19342,12 @@ sub {
         background: url("../../assets/images/business/bg-intro-section-electLink-mo.jpg") no-repeat center/cover;
     }
 }
+#wrap .business.electlink .content-body .section.banner-section .banner-head {
+    width: 10.4rem;
+}
+#wrap .business.electlink .content-body .section.banner-section .banner-head > img {
+    width: 100%;
+}
 @media (min-width: 1024px) {
     #wrap .business.speedmate .content-body .section .article.intro .article-wrap .article-body::before {
         background: url("../../assets/images/business/bg-intro-section-speedmate-pc.jpg") no-repeat center/cover;
@@ -19380,12 +19392,12 @@ sub {
     }
 }
 @media (min-width: 1024px) {
-    #wrap .business.encore .content-body .section .article.intro .article-wrap .article-body::before {
+    #wrap .business.phnyxLab .content-body .section .article.intro .article-wrap .article-body::before {
         background: url("../../assets/images/business/bg-intro-section-phnyxLab-pc.jpg") no-repeat center/cover;
     }
 }
 @media (max-width: 1023px) {
-    #wrap .business.encore .content-body .section .article.intro .article-wrap .article-body::before {
+    #wrap .business.phnyxLab .content-body .section .article.intro .article-wrap .article-body::before {
         background: url("../../assets/images/business/bg-intro-section-phnyxLab-mo.jpg") no-repeat center/cover;
     }
 }

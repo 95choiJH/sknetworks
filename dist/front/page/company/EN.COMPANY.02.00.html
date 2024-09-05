@@ -29,120 +29,117 @@
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             localAnimations_Case02();
+            gsap.registerPlugin(ScrollTrigger);
 
-            // bootstrap scrollspy
             var scrollSpy = new bootstrap.ScrollSpy(document.body, {
                 target: '#navbar-history'
             });
 
-            // scroll smooth
             document.querySelectorAll('.anchor-display a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
                     e.preventDefault();
-
                     document.querySelector(this.getAttribute('href')).scrollIntoView({
                         behavior: 'smooth'
                     });
                 });
             });
 
+            let setupTriggers = [];
+
             function getStartValue(type) {
                 if (type === 1) {
-                    return window.innerWidth >= 1024 ? 'top 12' : 'top 6';
+                    return window.innerWidth >= 1200 ? 'top 12' : 'top 5';
                 } else if (type === 2) {
-                    return window.innerWidth >= 1024 ? 'top -60' : 'top top';
+                    return window.innerWidth >= 1200 ? 'top -13%' : 'top top';
                 }
-                return 'top 12'; // 기본값
             }
-            // scroll ani
-            gsap.registerPlugin(ScrollTrigger);
 
-            const hisItem = document.querySelectorAll('.history-list .history-item');
-            const hisAnchor = document.querySelector('.anchor-area');
-            const mainHis = document.querySelector('.main.company.history');
-            const wrapHis = mainHis.closest('#wrap');
-            const wrapHead = wrapHis.querySelector('.local-head');
-            const bodyHis = mainHis.querySelector('.content-body');
-            const headerHis = wrapHis.querySelector('header');
-
-            // ScrollTrigger 설정 함수 정의
             function setupScrollTrigger() {
+                setupTriggers.forEach(trigger => trigger.kill());
+                setupTriggers = [];
+
+                const hisItem = document.querySelectorAll('.history-list .history-item');
+                const hisAnchor = document.querySelector('.anchor-area');
+                const mainHis = document.querySelector('.main.company.history');
+                const wrapHis = mainHis.closest('#wrap');
+                const wrapHead = wrapHis.querySelector('.local-head');
+                const bodyHis = mainHis.querySelector('.content-body');
+
                 hisItem.forEach(item => {
-                    const headElement = item.querySelector('.head');
                     const progressBar = item.querySelector('.progress-bar');
 
-                    gsap.to(item, {
-                        scrollTrigger: {
-                            trigger: item,
-                            start: getStartValue(1),
-                            end: 'bottom bottom',
-                            onEnter: () => {
-                                item.classList.add('active1');
+                    setupTriggers.push(
+                        gsap.to(item, {
+                            scrollTrigger: {
+                                trigger: item,
+                                start: getStartValue(1),
+                                end: 'bottom bottom',
+                                onEnter: () => {
+                                    item.classList.add('active1');
+                                },
+                                onLeaveBack: () => {
+                                    item.classList.remove('active1');
+                                },
                             },
-                            onLeaveBack: () => {
-                                item.classList.remove('active1');
-                            },
-                            // markers: true,
-                        },
-                    });
+                        })
+                    );
 
-                    gsap.to(item, {
-                        scrollTrigger: {
-                            trigger: item,
-                            start: getStartValue(2),
-                            end: 'bottom bottom',
-                            onEnter: () => {
-                                item.classList.add('active2');
+                    setupTriggers.push(
+                        gsap.to(item, {
+                            scrollTrigger: {
+                                trigger: item,
+                                start: getStartValue(2),
+                                end: 'bottom bottom',
+                                onEnter: () => {
+                                    item.classList.add('active2');
+                                },
+                                onLeaveBack: () => {
+                                    item.classList.remove('active2');
+                                },
                             },
-                            onLeaveBack: () => {
-                                item.classList.remove('active2');
-                            },
-                        },
-                    });
+                        })
+                    );
 
                     function updateProgress(self) {
                         const progress = self.progress;
                         progressBar.style.width = (progress * 100) + '%';
                     }
 
-                    gsap.to(progressBar, {
-                        width: '100%',
-                        scrollTrigger: {
-                            trigger: item,
-                            start: 'top 10%',
-                            end: 'bottom bottom',
-                            scrub: true,
-                            onUpdate: updateProgress,
+                    setupTriggers.push(
+                        gsap.to(progressBar, {
+                            width: '100%',
+                            scrollTrigger: {
+                                trigger: item,
+                                start: 'top 7%',
+                                end: 'bottom+=5% bottom',
+                                scrub: true,
+                                onUpdate: updateProgress,
+                            },
+                        })
+                    );
+                });
+
+                setupTriggers.push(
+                    ScrollTrigger.create({
+                        trigger: bodyHis,
+                        start: "top 2",
+                        end: "bottom bottom",
+                        onEnter: () => {
+                            hisAnchor.classList.add('fixed');
+                            wrapHis.style.overflow = 'visible';
+                            wrapHead.style.overflow = 'hidden';
                         },
-                    });
-                });
-
-                // 현재 고정 상태를 추적하는 변수
-                let isAnchorFixed = false;
-
-                ScrollTrigger.create({
-                    trigger: bodyHis,
-                    start: "top 2",
-                    end: "bottom bottom",
-                    onEnter: () => {
-                        hisAnchor.classList.add('fixed');
-                        wrapHis.style.overflow = 'visible';
-                        wrapHead.style.overflow = 'hidden';
-                        isAnchorFixed = true;
-                    },
-                    onLeaveBack: () => {
-                        hisAnchor.classList.remove('fixed');
-                        wrapHis.style.overflow = '';
-                        wrapHead.style.overflow = '';
-                        isAnchorFixed = false;
-                    },
-                });
+                        onLeaveBack: () => {
+                            hisAnchor.classList.remove('fixed');
+                            wrapHis.style.overflow = '';
+                            wrapHead.style.overflow = '';
+                        },
+                    })
+                );
             }
 
-            // 초기 ScrollTrigger 설정
             setupScrollTrigger();
 
-            // 디바운스 함수
             function debounce(func, wait) {
                 let timeout;
                 return function(...args) {
@@ -152,43 +149,43 @@
                 };
             }
 
-            // 리사이즈 이벤트 핸들러
-            // const debouncedRefresh = debounce(() => {
-            //     ScrollTrigger.refresh();
-            // });
+            const debouncedRefresh = debounce(() => {
+                ScrollTrigger.refresh();
+            }, 100);
 
             window.addEventListener('resize', () => {
-                ScrollTrigger.getAll().forEach(trigger => trigger.kill()); // 기존 트리거 제거
-                setupScrollTrigger(); // 트리거 다시 설정
-                ScrollTrigger.refresh(); // 새로고침
+                setupScrollTrigger();
+                debouncedRefresh();
             });
 
             ScrollTrigger.refresh();
 
-            // header regular 상태
-            const header = $('#header');
-            const headElement = $('.history-item');
-            const anchorSection = $('.section.anchor-area')
+            const header = document.getElementById('header');
+            const headElements = document.querySelectorAll('.history-item');
+            const anchorSection = document.querySelector('.section.anchor-area');
 
-
-            // header의 클래스 변경을 감지하는 MutationObserver 생성
             const observer = new MutationObserver(function(mutations) {
                 mutations.forEach(function(mutation) {
                     if (mutation.attributeName === 'class') {
-                        if (header.hasClass('regular')) {
-                            headElement.addClass('menu-rising').removeClass('menu-dropping');
-                            anchorSection.removeClass('anchor-dropping');
+                        if (header.classList.contains('regular')) {
+                            headElements.forEach(headElement => {
+                                headElement.classList.add('menu-rising');
+                                headElement.classList.remove('menu-dropping');
+                            });
+                            anchorSection.classList.remove('anchor-dropping');
                         } else {
-                            headElement.addClass('menu-dropping').removeClass('menu-rising');
-                            anchorSection.addClass('anchor-dropping');
+                            headElements.forEach(headElement => {
+                                headElement.classList.add('menu-dropping');
+                                headElement.classList.remove('menu-rising');
+                            });
+                            anchorSection.classList.add('anchor-dropping');
                         }
                     }
                 });
             });
 
-            // header 요소에 대해 MutationObserver를 설정
-            observer.observe(header[0], {
-                attributes: true // 속성 변경 감지
+            observer.observe(header, {
+                attributes: true
             });
 
             new Swiper(".anchor-display", {
@@ -251,7 +248,7 @@
                                         <a href="javascript:void(0)" target="_self" class="depth2">ICT Marketing</a>
                                     </li>
                                     <li class="depth2-item">
-                                        <a href="javascript:void(0)" target="_self" class="depth2 spec">Walkerhill Hotels & Resorts</a>
+                                        <a href="javascript:void(0)" target="_self" class="depth2 spec">Walkerhill Hotels &amp; Resorts</a>
                                     </li>
                                     <li class="depth2-item">
                                         <a href="javascript:void(0)" target="_self" class="depth2">SK Magic</a>
@@ -321,7 +318,7 @@
                                                     <a href="javascript:void(0)" target="_self" class="depth3">Employee Happiness</a>
                                                 </li>
                                                 <li class="depth3-item">
-                                                    <a href="javascript:void(0)" target="_self" class="depth3">Safety & Health</a>
+                                                    <a href="javascript:void(0)" target="_self" class="depth3">Safety &amp; Health</a>
                                                 </li>
                                                 <li class="depth3-item">
                                                     <a href="javascript:void(0)" target="_self" class="depth3">Stakeholder <br class="pc-only">Happiness</a>
@@ -516,7 +513,7 @@
                                         </li>
                                         <li class="nav-item anchor-item swiper-slide">
                                             <a class="nav-link anchor-link" href="#historyArea1">
-                                                <span class="link-text date">2003 ~ 2017</span>
+                                                <span class="link-text date">2003 ~ 2019</span>
                                             </a>
                                         </li>
                                         <li class="nav-item anchor-item swiper-slide">
@@ -541,7 +538,7 @@
                                                 <div class="head">
                                                     <div class="subject">
                                                         <p class="summary">2020 ~</p>
-                                                        <p class="name">AI중심 사업 지주회사로 진화</p>
+                                                        <p class="name">Evolving into an AI-Centered Business Holding Company</p>
                                                     </div>
                                                     <div class="progress-bar"></div>
                                                 </div>
@@ -552,7 +549,7 @@
                                                                 <div class="data-wrap">
                                                                     <div class="data-inform">
                                                                         <div class="data-subject">
-                                                                            <p class="data-name">SK렌터카 매각</p>
+                                                                            <p class="data-name">Sale of SK Rent-a-car</p>
                                                                         </div>
                                                                         <p class="data-date">2024.8</p>
                                                                     </div>
@@ -649,7 +646,7 @@
                                                 <div class="head">
                                                     <div class="subject">
                                                         <p class="summary">2003 ~ 2019</p>
-                                                        <p class="name">SK Networks: The Birth of a Global Company</p>
+                                                        <p class="name">Global Marketing Company 'SK Networks’</p>
                                                     </div>
                                                     <div class="progress-bar"></div>
                                                 </div>
